@@ -7,8 +7,6 @@
         "url": "https://github.com/danwahlin/angular-helloworld"
     },
     "scripts": {
-        "tsc": "tsc",
-        "tsc:w": "tsc -w",
         "build": "webpack --config webpack.config.js",
         "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
         "lite": "lite-server",
