@@ -10,7 +10,13 @@
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "build": "webpack --config webpack.config.js",
-        "start": "tsc && concurrently \"tsc -w\" \"lite-server\""
+        "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+        "lite": "lite-server",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "typings": "typings",
+        "postinstall": "typing install"
     },
     "license": "ISC",
     "dependencies": {

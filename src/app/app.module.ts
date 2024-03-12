@@ -1,4 +1,4 @@
-import { NgModule }      from '@angular/core';
+import { NgModule,NO_ERRORS_SCHEMA}      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 
@@ -20,6 +20,7 @@ import { WidgetComponent } from './widget/widget.component';
     )],
     providers: [{provide: APP_BASE_HREF, useValue : '/' }],
   declarations: [ AppComponent,WidgetComponent],
+  schemas: [NO_ERRORS_SCHEMA],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
